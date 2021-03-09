@@ -1,0 +1,11 @@
+object frmProducts: TfrmProducts
+  Left = 524
+  Height = 388
+  Top = 217
+  Width = 511
+  Caption = 'frmProducts'
+  Color = clYellow
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+end

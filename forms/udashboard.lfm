@@ -1,0 +1,432 @@
+object frmDashboard: TfrmDashboard
+  Left = 483
+  Height = 549
+  Top = 153
+  Width = 793
+  Caption = 'frmDashboard'
+  ClientHeight = 549
+  ClientWidth = 793
+  Color = clSkyBlue
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Panel4: TPanel
+    Left = 16
+    Height = 190
+    Top = 24
+    Width = 200
+    BevelOuter = bvNone
+    ClientHeight = 190
+    ClientWidth = 200
+    Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+    object BCRadialProgressBar1: TBCRadialProgressBar
+      Left = 20
+      Height = 130
+      Top = 40
+      Width = 160
+      Value = 55
+      LineColor = 2734439
+      LineBkgColor = 16052204
+      LineWidth = 10
+      FontShadowColor = clWhite
+      Font.Color = clBlack
+      Font.Height = 23
+    end
+    object Label4: TLabel
+      Left = 40
+      Height = 20
+      Top = 10
+      Width = 132
+      Caption = 'Profile Completness'
+      Font.Color = 8285789
+      Font.Height = 20
+      Font.Name = 'Segoe UI'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Panel5: TPanel
+    Left = 232
+    Height = 190
+    Top = 24
+    Width = 200
+    BevelOuter = bvNone
+    ClientHeight = 190
+    ClientWidth = 200
+    Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+    object Label5: TLabel
+      Left = 61
+      Height = 20
+      Top = 10
+      Width = 85
+      Caption = 'Profile Views'
+      Font.Color = 8285789
+      Font.Height = 20
+      Font.Name = 'Segoe UI'
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 60
+      Height = 62
+      Top = 50
+      Width = 75
+      Caption = '540'
+      Font.Color = 11026453
+      Font.Height = 63
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 20
+      Height = 38
+      Top = 140
+      Width = 45
+      Caption = '330'
+      Font.Color = 15046662
+      Font.Height = 38
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 130
+      Height = 38
+      Top = 140
+      Width = 45
+      Caption = '330'
+      Font.Color = 698707
+      Font.Height = 38
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label10: TLabel
+      Left = 16
+      Height = 17
+      Top = 120
+      Width = 71
+      Caption = 'by company'
+      Font.Color = 8285789
+      Font.Height = 18
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label11: TLabel
+      Left = 128
+      Height = 17
+      Top = 120
+      Width = 55
+      Caption = 'by others'
+      Font.Color = 8285789
+      Font.Height = 18
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Panel6: TPanel
+    Left = 16
+    Height = 190
+    Top = 232
+    Width = 200
+    BevelOuter = bvNone
+    ClientHeight = 190
+    ClientWidth = 200
+    Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+    object BCRadialProgressBar2: TBCRadialProgressBar
+      Left = 20
+      Height = 130
+      Top = 40
+      Width = 160
+      Value = 25
+      LineColor = clGreen
+      LineBkgColor = 16052204
+      LineWidth = 10
+      FontShadowColor = clWhite
+      Font.Color = clBlack
+      Font.Height = 23
+    end
+    object Label6: TLabel
+      Left = 0
+      Height = 20
+      Top = 10
+      Width = 200
+      Align = alTop
+      Alignment = taCenter
+      BorderSpacing.Top = 10
+      Caption = 'abgeschlossene Aufträge'
+      Font.Color = 8285789
+      Font.Height = 20
+      Font.Name = 'Segoe UI'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Panel7: TPanel
+    Left = 232
+    Height = 190
+    Top = 232
+    Width = 200
+    BevelOuter = bvNone
+    ClientHeight = 190
+    ClientWidth = 200
+    Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+    object BCRadialProgressBar3: TBCRadialProgressBar
+      Left = 20
+      Height = 130
+      Top = 40
+      Width = 160
+      Value = 60
+      LineColor = clYellow
+      LineBkgColor = 16052204
+      LineWidth = 10
+      FontShadowColor = clWhite
+      Font.Color = clBlack
+      Font.Height = 23
+    end
+    object Label14: TLabel
+      Left = 0
+      Height = 20
+      Top = 10
+      Width = 200
+      Align = alTop
+      Alignment = taCenter
+      BorderSpacing.Top = 10
+      Caption = 'offene Angebote'
+      Font.Color = 8285789
+      Font.Height = 20
+      Font.Name = 'Segoe UI'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Panel8: TPanel
+    Left = 448
+    Height = 190
+    Top = 232
+    Width = 200
+    BevelOuter = bvNone
+    ClientHeight = 190
+    ClientWidth = 200
+    Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+    object BCRadialProgressBar4: TBCRadialProgressBar
+      Left = 20
+      Height = 130
+      Top = 40
+      Width = 160
+      Value = 99
+      LineColor = clRed
+      LineBkgColor = 16052204
+      LineWidth = 13
+      FontShadowColor = clBackground
+      Font.Color = clBlack
+      Font.Height = 23
+    end
+    object Label15: TLabel
+      Left = 0
+      Height = 20
+      Top = 10
+      Width = 200
+      Align = alTop
+      Alignment = taCenter
+      BorderSpacing.Top = 10
+      Caption = 'geplatze Aufträge'
+      Font.Color = 8285789
+      Font.Height = 20
+      Font.Name = 'Segoe UI'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object Panel9: TPanel
+    Left = 448
+    Height = 190
+    Top = 24
+    Width = 200
+    BevelOuter = bvNone
+    ClientHeight = 190
+    ClientWidth = 200
+    Color = clWhite
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 5
+    object Label13: TLabel
+      Left = 0
+      Height = 62
+      Top = 52
+      Width = 200
+      Align = alTop
+      Alignment = taCenter
+      AutoSize = False
+      BorderSpacing.Top = 21
+      Caption = '1540'
+      Font.Color = 11026453
+      Font.Height = 63
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label16: TLabel
+      Left = 8
+      Height = 38
+      Top = 144
+      Width = 30
+      Anchors = [akLeft, akBottom]
+      Caption = '30'
+      Font.Color = 15046662
+      Font.Height = 38
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label17: TLabel
+      Left = 144
+      Height = 38
+      Top = 144
+      Width = 45
+      Alignment = taRightJustify
+      Anchors = [akRight, akBottom]
+      Caption = '330'
+      Font.Color = 698707
+      Font.Height = 38
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label18: TLabel
+      Left = 8
+      Height = 17
+      Top = 120
+      Width = 86
+      Anchors = [akLeft, akBottom]
+      Caption = 'abgeschlossen'
+      Font.Color = 8285789
+      Font.Height = 18
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label19: TLabel
+      Left = 159
+      Height = 17
+      Top = 120
+      Width = 30
+      Alignment = taRightJustify
+      Anchors = [akRight, akBottom]
+      Caption = 'offen'
+      Font.Color = 8285789
+      Font.Height = 18
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label20: TLabel
+      Left = 0
+      Height = 21
+      Top = 10
+      Width = 200
+      Align = alTop
+      Alignment = taCenter
+      BorderSpacing.Top = 10
+      Caption = 'Leads'
+      Font.Color = 8285789
+      Font.Height = 22
+      Font.Name = 'Segoe UI'
+      ParentColor = False
+      ParentFont = False
+    end
+  end
+  object MDButton1: TBCMDButton
+    Left = 16
+    Height = 50
+    Top = 440
+    Width = 94
+    Animation = True
+    StyleNormal.Color = clWhite
+    StyleNormal.TextColor = 7497045
+    StyleHover.Color = clWhite
+    StyleHover.TextColor = clBlack
+    StyleActive.Color = 13027014
+    StyleActive.TextColor = 12615680
+    StyleDisabled.Color = clWhite
+    StyleDisabled.TextColor = 10724259
+    Checked = True
+    Kind = mdbkTab
+    TextAutoSize = True
+    TextProportional = False
+    TextProportionalRatio = 0.5
+    Caption = 'Blog'
+    ParentFont = False
+  end
+  object MDButton2: TBCMDButton
+    Left = 128
+    Height = 50
+    Top = 440
+    Width = 94
+    Animation = True
+    StyleNormal.Color = clWhite
+    StyleNormal.TextColor = 7497045
+    StyleHover.Color = clWhite
+    StyleHover.TextColor = clBlack
+    StyleActive.Color = 13027014
+    StyleActive.TextColor = 12615680
+    StyleDisabled.Color = clWhite
+    StyleDisabled.TextColor = 10724259
+    Kind = mdbkTab
+    TextAutoSize = True
+    TextProportional = False
+    TextProportionalRatio = 0.5
+    Caption = 'Questions'
+    ParentFont = False
+  end
+  object MDButton3: TBCMDButton
+    Left = 238
+    Height = 50
+    Top = 440
+    Width = 94
+    Animation = True
+    StyleNormal.Color = clWhite
+    StyleNormal.TextColor = 7497045
+    StyleHover.Color = clWhite
+    StyleHover.TextColor = clBlack
+    StyleActive.Color = 13027014
+    StyleActive.TextColor = 12615680
+    StyleDisabled.Color = clWhite
+    StyleDisabled.TextColor = 10724259
+    Kind = mdbkTab
+    TextAutoSize = True
+    TextProportional = False
+    TextProportionalRatio = 0.5
+    Caption = 'Companies'
+    ParentFont = False
+  end
+  object MDButton4: TBCMDButton
+    Left = 348
+    Height = 50
+    Top = 440
+    Width = 94
+    Animation = True
+    StyleNormal.Color = clWhite
+    StyleNormal.TextColor = 7497045
+    StyleHover.Color = clWhite
+    StyleHover.TextColor = clBlack
+    StyleActive.Color = 13027014
+    StyleActive.TextColor = 12615680
+    StyleDisabled.Color = clWhite
+    StyleDisabled.TextColor = 10724259
+    Kind = mdbkTab
+    TextAutoSize = True
+    TextProportional = False
+    TextProportionalRatio = 0.5
+    Caption = 'Contact'
+    ParentFont = False
+  end
+end
