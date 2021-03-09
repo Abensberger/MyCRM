@@ -1,0 +1,207 @@
+object MainForm: TMainForm
+  Left = 658
+  Height = 647
+  Top = 135
+  Width = 614
+  Caption = 'MainForm'
+  ClientHeight = 647
+  ClientWidth = 614
+  Color = clBackground
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.0.10.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 28
+    Top = 8
+    Width = 478
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 0
+    TextHint = 'Filterkriterium eingeben'
+  end
+  object DBGrid1: TDBGrid
+    Left = 8
+    Height = 120
+    Top = 48
+    Width = 588
+    Anchors = [akTop, akLeft, akRight]
+    Color = clWindow
+    Columns = <>
+    Flat = True
+    Options = [dgEditing, dgTitles, dgIndicator, dgColumnResize, dgColumnMove, dgColLines, dgRowLines, dgTabs, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgAutoSizeColumns]
+    TabOrder = 1
+  end
+  object DBControlGrid1: TDBControlGrid
+    AnchorSideTop.Control = DBGrid1
+    AnchorSideTop.Side = asrBottom
+    Left = 6
+    Height = 456
+    Top = 180
+    Width = 590
+    AlternateColor = clMoneyGreen
+    AltColorStartNormal = True
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 12
+    Color = clWindow
+    DefaultPositionAtEnd = False
+    DrawPanel = Panel1
+    Flat = True
+    Options = [dgpIndicator, dgpDisableInsert]
+    TabOrder = 2
+    OnContextPopup = DBControlGrid1ContextPopup
+    ColWidths = (
+      12
+      557
+    )
+    object Panel1: TPanel
+      Left = 13
+      Height = 96
+      Top = 1
+      Width = 557
+      ClientHeight = 96
+      ClientWidth = 557
+      TabOrder = 0
+      object DBText1: TDBText
+        Left = 8
+        Height = 23
+        Top = 4
+        Width = 72
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -17
+        Font.Name = 'Segoe UI Black'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+      object DBText2: TDBText
+        Left = 8
+        Height = 20
+        Top = 26
+        Width = 54
+        ParentColor = False
+      end
+      object DBText3: TDBText
+        AnchorSideLeft.Control = DBText2
+        AnchorSideLeft.Side = asrBottom
+        Left = 72
+        Height = 20
+        Top = 26
+        Width = 54
+        BorderSpacing.Left = 10
+        ParentColor = False
+      end
+      object DBText4: TDBText
+        Left = 8
+        Height = 20
+        Top = 46
+        Width = 54
+        ParentColor = False
+      end
+      object DBText5: TDBText
+        AnchorSideLeft.Control = DBText4
+        AnchorSideLeft.Side = asrBottom
+        Left = 72
+        Height = 20
+        Top = 46
+        Width = 54
+        BorderSpacing.Left = 10
+        ParentColor = False
+      end
+      object DBText6: TDBText
+        Left = 8
+        Height = 20
+        Top = 66
+        Width = 54
+        ParentColor = False
+      end
+      object DBText7: TDBText
+        AnchorSideLeft.Control = DBText6
+        AnchorSideLeft.Side = asrBottom
+        Left = 72
+        Height = 20
+        Top = 66
+        Width = 54
+        BorderSpacing.Left = 10
+        ParentColor = False
+      end
+      object DBText8: TDBText
+        AnchorSideLeft.Control = Label1
+        AnchorSideLeft.Side = asrBottom
+        Left = 236
+        Height = 20
+        Top = 26
+        Width = 54
+        BorderSpacing.Left = 6
+        ParentColor = False
+      end
+      object Label1: TLabel
+        Left = 208
+        Height = 20
+        Top = 26
+        Width = 22
+        Alignment = taRightJustify
+        Caption = 'Tel:'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        AnchorSideRight.Control = Label1
+        AnchorSideRight.Side = asrBottom
+        Left = 186
+        Height = 20
+        Top = 46
+        Width = 44
+        Alignment = taRightJustify
+        Anchors = [akTop, akLeft, akRight]
+        Caption = 'Email:'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        AnchorSideRight.Control = Label1
+        AnchorSideRight.Side = asrBottom
+        Left = 154
+        Height = 20
+        Top = 66
+        Width = 76
+        Alignment = taRightJustify
+        Anchors = [akTop, akLeft, akRight]
+        Caption = 'Internet:'
+        ParentColor = False
+      end
+      object DBText9: TDBText
+        AnchorSideLeft.Control = Label2
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label2
+        Left = 236
+        Height = 20
+        Top = 46
+        Width = 54
+        BorderSpacing.Left = 6
+        ParentColor = False
+      end
+      object DBText10: TDBText
+        AnchorSideLeft.Control = Label3
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Label3
+        Left = 236
+        Height = 20
+        Top = 66
+        Width = 62
+        BorderSpacing.Left = 6
+        ParentColor = False
+      end
+    end
+  end
+  object Button1: TButton
+    Left = 496
+    Height = 31
+    Top = 8
+    Width = 98
+    Anchors = [akTop, akRight]
+    Caption = 'Find'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+end

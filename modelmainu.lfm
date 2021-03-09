@@ -1,0 +1,43 @@
+object ModelMain: TModelMain
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 298
+  HorizontalOffset = 918
+  VerticalOffset = 390
+  Width = 510
+  PPI = 120
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    AlwaysUseBigint = False
+    Left = 70
+    Top = 30
+  end
+  object QueryCustomers: TSQLQuery
+    FieldDefs = <>
+    SQL.Strings = (
+      'select *,'
+      '       k.bezeichnung as kategoriename,'
+      '       k.Farbe as kategoriefarbe'
+      'from adressen a, kategorien k'
+      'where (a.company || "_" || a.vorname || "_" || a.nachname like :Filter) and'
+      '(a.kategorie = k.id)'
+      'order by Upper(company)'
+      ''
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'Filter'
+        ParamType = ptInput
+      end>
+    Left = 253
+    Top = 55
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Left = 99
+    Top = 160
+  end
+end

@@ -1,0 +1,14 @@
+object ViewModelMain: TViewModelMain
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 470
+  HorizontalOffset = 574
+  VerticalOffset = 560
+  Width = 474
+  PPI = 120
+  object DSCustomers: TDataSource
+    OnDataChange = DSCustomersDataChange
+    Left = 80
+    Top = 50
+  end
+end
